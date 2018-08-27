@@ -1,0 +1,23 @@
+{
+  "name": "osla_simple",
+  "version": "1.0.0",
+  "description": "simplified version of osla",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGolumbovsky/osla_simple.git"
+  },
+  "author": "agolumbovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AGolumbovsky/osla_simple/issues"
+  },
+  "homepage": "https://github.com/AGolumbovsky/osla_simple#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
