@@ -17,6 +17,19 @@ db.once('open', function() {
 });
 
 
+app.get('/api/thisStuff', function(req, res) {
+
+    thisStuff.find({}, (err, data) => {
+
+        if (err) throw err;
+
+        res.send(data);
+
+    })
+
+});
+
+
 var currentDate = new Date();
 var timestamp = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
 
