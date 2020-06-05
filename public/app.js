@@ -1,13 +1,7 @@
-console.log("it works!")
-
-let buttClick = () => {
-    let userInput = document.getElementById("userInput").value;
-    alert(userInput);
-    document.getElementById("result").innerHTML = userInput;
-}
-
 let findWord = () => {
 
+    document.getElementById("display-area").innerHTML = "TEST! FIND CLICKED";
+    
     // fetch('http://example.com/movies.json')
     // .then(function(response) {
     //     return response.json();
@@ -17,7 +11,6 @@ let findWord = () => {
     //     console.log("fetched something")
     // });
 
-    document.getElementById("display-area").innerHTML = "TEST! FIND CLICKED";
 }
 
 // some more stuff on fetch() from the internets
