@@ -19,21 +19,17 @@ module.exports = (app) => {
             console.log("SELECT query executed");
             console.log(`apiController sent ${data.rows[0].reading}`);
             res.send(data);
-
-            if (data.rows[0].reading <= 400) {
-                emailer(data.rows[0].reading);
-            }
         })
     });
 
     app.post('/api/dummyPopulate', (req, res) => {
 
         console.log("res is:", res.json());
-        let reading = 333;
-        let description = 'from apiController to the view';
+        let dummyStr = "testest testestest";
+        let description = "testest description";
 
-        let queryText = `INSERT INTO readings (reading, identifier)
-                        VALUES (${ reading }, 'from view to db dbl qs')`;
+        let queryText = `INSERT INTO dict_entries (word, description)
+                        VALUES (${ dummyStr }, 'from view to db dbl qs')`;
         pool.query(queryText, (err, data) => {
 
             if (err) {

@@ -14,7 +14,7 @@ let findWord = () => {
 }
 
 // some more stuff on fetch() from the internets
-var url = 'https://example.com/profile';
+var url = 'localhost:8888/api/word';
 var data = {username: 'example'};
 
 let addWord = () => {
