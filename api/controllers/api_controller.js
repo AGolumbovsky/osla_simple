@@ -1,7 +1,6 @@
 const { Pool } = require('pg');
 const pool = require('../config/db_connect');
 const cors = require('cors');
-const emailer = require('../emailer');
 
 module.exports = (app) => {
 
@@ -10,7 +9,7 @@ module.exports = (app) => {
 
     app.get('/api/latestReading', (req, res) => {
 
-        let queryText = `SELECT * FROM readings ORDER BY id DESC LIMIT 1`; // change to one last rdng
+        let queryText = `SELECT * FROM dict_entries` ;
         pool.query(queryText, (err, data) => {
 
             if (err) {
