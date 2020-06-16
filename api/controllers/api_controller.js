@@ -7,7 +7,7 @@ module.exports = (app) => {
     app.use(cors());
     app.options('*', cors());
 
-    app.get('/api/latestReading', (req, res) => {
+    app.get('/api/word', (req, res) => {
 
         let queryText = `SELECT * FROM dict_entries` ;
         pool.query(queryText, (err, data) => {
