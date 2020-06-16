@@ -17,7 +17,7 @@ module.exports = (app) => {
             }
             
             console.log("SELECT query executed");
-            console.log(`apiController sent ${data.rows[0].reading}`);
+            console.log(`apiController sent ${data.rows[0].word}`);
             res.send(data);
         })
     });
@@ -38,9 +38,9 @@ module.exports = (app) => {
 
             console.log("INSERT query executed", data);
 
-        });
-        
+        });   
                 
     });
 
 }
+
