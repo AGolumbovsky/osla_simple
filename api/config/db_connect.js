@@ -1,8 +1,7 @@
 const { Pool } = require('pg');
 
-const connectionString = "postgres://plantr:ko00KO))@localhost/plantarium_db";
+const connectionString = "postgres://postgres:pgsuper@localhost/osla";
 
-    
 const pool = new Pool({
         connectionString: connectionString
     });
